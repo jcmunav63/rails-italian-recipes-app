@@ -161,8 +161,8 @@ Not available at the moment.
 
 👤 **Mohammed Jamal**
 
-- GitHub: [@githubhandle](https://github.com/mohamedgamaleldin999999)
-- Twitter: [@twitterhandle](https://twitter.com/Mohamme43086002)
+- GitHub: [@mohamedgamaleldin999999](https://github.com/mohamedgamaleldin999999)
+- Twitter: [@mohammedjamal](https://twitter.com/Mohamme43086002)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
