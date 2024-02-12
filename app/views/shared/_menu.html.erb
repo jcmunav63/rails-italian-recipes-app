@@ -1,0 +1,8 @@
+<div id="container"></div>
+<div class="menu-container">
+  <span class="logout">
+    <% if user_signed_in? %>
+      <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: "logout-btn" %>
+    <% end %>
+  </span>
+</div>
