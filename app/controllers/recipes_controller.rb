@@ -32,6 +32,10 @@ class RecipesController < ApplicationController
     end
   end
 
+  def public_recipes
+    @public_recipes = Recipe.where(public: true).order(created_at: :desc).paginate(page: params[:page], per_page: 5)
+  end
+
   private
 
   def recipe_params

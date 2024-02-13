@@ -1,0 +1,19 @@
+<%= render partial: 'shared/menu' %>
+<h1>Public Recipes</h1>
+<% @public_recipes.each do |recipe| %>
+  <div class="recipes-container">
+    <table>
+      <tr>
+        <td class="recipe-column1" style="width: 40%">
+          <h3 class="name"><%= link_to recipe.name %></h3>
+          <p>By: <%= recipe.user.name %></p>
+        </td>
+        <td class="recipe-column2" style="width: 60%">
+          <p>Total: <%= recipe.recipe_foods.count %></p>
+          <p>Total Price: $<%= recipe.total_price %></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+<% end %>
+<div class="page"><%= will_paginate @public_recipes %></div>
