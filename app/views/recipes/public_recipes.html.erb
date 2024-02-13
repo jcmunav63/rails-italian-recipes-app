@@ -9,8 +9,8 @@
           <p>By: <%= recipe.user.name %></p>
         </td>
         <td class="recipe-column2" style="width: 60%">
-          <p>Total: </p>
-          <p>Total Price: $ </p>
+          <p>Total: <%= recipe.recipe_foods.count %></p>
+          <p>Total Price: $<%= recipe.total_price %></p>
         </td>
       </tr>
     </table>

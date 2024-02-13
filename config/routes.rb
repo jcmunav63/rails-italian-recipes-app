@@ -15,4 +15,5 @@ Rails.application.routes.draw do
     resources :recipes, only: [:index, :new, :create, :destroy] do
     end
   end
+  get 'public_recipes', to: 'recipes#public_recipes'
 end
