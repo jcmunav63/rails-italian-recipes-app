@@ -17,7 +17,7 @@
     </tr>
     <tr>
       <td colspan="2" class="span">
-        <%= link_to 'Generate shopping list', generate_shopping_list_user_recipe_path(@user, @recipe), class: "middle-btn" %>&nbsp;&nbsp;
+        <%= link_to 'Generate shopping list', class: "middle-btn" %>&nbsp;&nbsp;
         <%= link_to 'Add ingredient', new_user_recipe_recipe_food_path(current_user, @recipe), class: "middle-btn" %>
       </td>
     </tr>
@@ -42,9 +42,11 @@
           <p class="unit-value"><%= recipefood.food.price * recipefood.quantity %></p>
         </td>
         <td class="col4">
-          <%= link_to "Modify",  class: "link1" %>&nbsp;&nbsp;
-          <%# <%= button_to "Delete", class: "link1" %>
-          <%= button_to "Delete", user_recipe_recipe_food_path(user_id: @user.id, recipe_id: @recipe.id, id: recipefood.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+          <p>
+            <%= link_to "Modify",  class: "link1" %>&nbsp;&nbsp;
+          <%= button_to "Delete", user_recipe_recipe_food_path(user_id: @user.id, recipe_id: @recipe.id,
+            id: recipefood.id), method: :delete, class: "link2", data: { confirm: 'Are you sure?' } %>
+          </p>
         </td>
       </tr>
     <% end %>

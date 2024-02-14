@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
 }
+
 h1 {
   padding: 0;
   margin-top: 2rem;
@@ -11,29 +12,45 @@ h1 {
   text-align: center;
   margin-bottom: 15px;
 }
+
 p {
-  padding: 10px;
+  padding: 5px;
 }
-.section1,
+
+.section1 {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+}
+
 .recipe-foods-container {
-  margin-left: 1%;
-  margin-right: 1%;
-  width: 98%;
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
 }
+
+th {
+  font-size: 1.3rem;
+}
+
 tr {
   width: 100%;
 }
+
 td {
   vertical-align: top;
-  padding: 3px;
+  padding: 0;
 }
+
 .up-table {
   width: 100%;
   border: none;
 }
+
 .f-size {
   font-size: 1.4rem;
 }
+
 .form-group {
   text-align: right;
   padding-right: 15px;
@@ -43,54 +60,123 @@ td {
   flex-direction: row;
   justify-content: space-around;
 }
+
 .centered {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 .span {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 3px;
   padding-bottom: 3px;
+  margin-bottom: 12px;
 }
+
 .public {
   padding-top: 15px;
 }
+
 .up-buttons {
   display: flex;
   flex-direction: row;
 }
+
 .sep {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 .down-table {
   margin-bottom: 1.5rem;
 }
+
+.down-table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0;
+}
+
 .col1,
 .col2,
 .col3 {
   text-align: center;
   vertical-align: middle;
 }
+
 .col4 {
   vertical-align: middle;
+  padding-left: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 3px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 2px;
-  padding-top: 6px;
   border: 1px solid black;
 }
+
+.name,
+.quantity,
+.unit-value {
+  font-size: 1.3rem;
+}
+
 .horizontal {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .middle-btn {
   margin-left: 8%;
-  margin-top: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  background-color: lightgrey;
+  border: solid 2px black;
+  border-radius: 4px;
+  box-shadow: 3px 3px black;
+  text-decoration: none;
+  padding: 4px 6px;
+}
+
+.middle-btn:hover {
+  background-color: grey;
+  box-shadow: 1px 1px black;
+  font-weight: 600;
+}
+
+.link1 {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.link2 {
+  font-size: 1.3rem;
+  margin-left: 30px;
+  border: none;
+  color:mediumblue;
+  background-color: transparent;
+}
+
+.link2:hover {
+  color: darkblue;
+  font-weight: 600;
+}
+
+.inner-btn {
+  margin-left: 8%;
+  margin-top: 8px;
+  margin-top: 4px;
+  width: 75px;
+  height: 30px;
   font-size: 1.2rem;
   color: black;
   background-color: lightgrey;
@@ -100,12 +186,9 @@ td {
   text-decoration: none;
   padding: 2px 4px;
 }
-.middle-btn:hover {
+
+.inner-btn:hover {
   background-color: grey;
   box-shadow: 1px 1px black;
   font-weight: 600;
-}
-.link1 {
-  font-size: 1.2rem;
-  padding: 2px;
 }
