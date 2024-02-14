@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   root to: "recipes#index"
 
   resources :users, only: [:index] do
-    resources :recipes, only: [:index, :new, :create, :destroy] do
+    resources :recipes, only: [:index, :new, :create, :destroy, :show] do
+      resources :recipe_foods, only: [:index, :new, :create, :destroy] do
+      end
     end
     resources :foods, only: [:index, :new, :create, :destroy] do
     end
