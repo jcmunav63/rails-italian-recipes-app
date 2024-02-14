@@ -1,0 +1,38 @@
+<%= render partial: 'shared/menu' %>
+<div class="foods-container">
+  <h1>Foods List</h1>
+  <%= link_to "New Food", new_user_food_path(current_user), class: "new-food-btn" %>
+  <%#   %>
+
+  <table class="foods-table">
+    <th style="width: 30%">Food</th>
+    <th style="width: 20%">Quantity</th>
+    <th style="width: 15%">Measurment Unit</th>
+    <th style="width: 15%">Unit price</th>
+    <th style="width: 20%">Actions</th>
+    <% @foods.each do |food| %>
+      <div>
+        <tr>
+          <td class="food-column1">
+            <p class="name"><%= food.name %></p>
+          </td>
+          <td class="food-column1a">
+            <p class="quantity"><%= food.quantity %></p>
+          </td>
+          <td class="food-column2">
+            <p class="measurement"><%= food.measurement_unit %></p>
+          </td>
+          <td class="food-column3">
+            <p class="unit-price"><%= food.price %></p>
+          </td>
+          <td class="food-column4">
+            <span style="text-align: center;"><%= button_to "Delete", user_food_path(@user.id, food.id), class: "link1", method: :delete,
+              data: { confirm: 'Are you sure?' } %></span>
+          </td>
+        </tr>
+      </div>
+    <% end %>
+  </table>
+</div>
+
+<div class="page"><%= will_paginate @posts %></div>
