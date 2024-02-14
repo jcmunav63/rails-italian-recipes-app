@@ -42,6 +42,13 @@ class RecipesController < ApplicationController
     @recipefoods = @recipe.recipe_foods
   end
 
+  def generate_shopping_list
+    @recipe = Recipe.find(params[:id])
+    @missing_food_items = find_missing_food_items(@recipe)
+    @total_food_to_buy = @missing_food_items.count
+    @total_value_of_food_needed = @missing_food_items.sum { |item| item[:quantity] * item[:price] }
+  end
+
   private
 
   def recipe_params
