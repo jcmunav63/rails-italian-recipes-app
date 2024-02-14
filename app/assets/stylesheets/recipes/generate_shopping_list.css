@@ -14,118 +14,69 @@ h1 {
 }
 
 p {
-  padding: 10px;
+  padding: 5px;
 }
 
-/* .section1, */
 .shopping-list-container {
   margin-left: 8%;
   margin-right: 8%;
   width: auto;
 }
 
+.section1,
+.section2 {
+  margin-left: 2%;
+  width: 96%;
+}
+
+th {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
 tr {
   width: 100%;
 }
 
-td {
-  vertical-align: top;
-  padding: 3px;
+.table1 {
+  margin-bottom: 30px;
 }
 
-.up-table {
-  width: 100%;
+.table1 td {
+  padding: 3px;
+  font-size: 1.3rem;
+  text-align: center;
   border: none;
 }
 
-.f-size {
-  font-size: 1.4rem;
-}
-
-.form-group {
-  text-align: right;
-  padding-right: 15px;
-  padding-top: 15px;
-  font-size: 1.4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.centered {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.span {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-.public {
-  padding-top: 15px;
-}
-
-.up-buttons {
-  display: flex;
-  flex-direction: row;
-}
-
-.sep {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.down-table {
+.table2 {
   margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  border: solid 1px black;
 }
 
-.col1,
+.table2 td {
+  padding: 3px;
+  font-size: 1.3rem;
+  border: solid 1px black;
+}
+
+.col1 {
+  margin-left: 3px;
+  text-align: start;
+  vertical-align: middle;
+}
+
 .col2,
 .col3 {
   text-align: center;
   vertical-align: middle;
 }
 
-.col4 {
-  vertical-align: middle;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 2px;
-  padding-top: 6px;
-  border: 1px solid black;
+.odd {
+  background-color: white;
 }
 
-.horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.middle-btn {
-  margin-left: 8%;
-  margin-top: 15px;
-  font-size: 1.2rem;
-  color: black;
-  background-color: lightgrey;
-  border: solid 2px black;
-  border-radius: 4px;
-  box-shadow: 3px 3px black;
-  text-decoration: none;
-  padding: 2px 4px;
-}
-
-.middle-btn:hover {
-  background-color: grey;
-  box-shadow: 1px 1px black;
-  font-weight: 600;
-}
-
-.link1 {
-  font-size: 1.2rem;
-  padding: 2px;
+.even {
+  background-color: lightgray;
 }

@@ -102,7 +102,6 @@ p {
 .menu-btn:hover {
   background-color: grey;
   box-shadow: 1px 1px black;
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -122,7 +121,6 @@ p {
 .new-recipe-btn:hover {
   background-color: grey;
   box-shadow: 1px 1px black;
-  font-weight: 600;
 }
 
 .link1 {
@@ -135,7 +133,7 @@ p {
 }
 
 .link1:hover {
-  color: navy;
+  color: darkblue;
   font-weight: 600;
 }
 
