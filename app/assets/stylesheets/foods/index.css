@@ -26,42 +26,59 @@ li {
   padding: 0;
 }
 
-.recipes-container {
+.foods-container {
   margin-left: 8%;
   margin-right: 8%;
   width: auto;
-  border: 2px solid black;
-  border-radius: 4px;
   margin-bottom: 20px;
 }
 
-.recipe-column1 {
+.foods-table {
+  margin-top: 5%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: lightgrey;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.foods-column1 {
   padding: 10px;
   vertical-align: top;
-  border: none;
+  text-align: left;
 }
 
-.recipe-column2 {
+.foods-column1a {
   padding: 10px;
+  text-align: center;
   vertical-align: top;
-  display: flex;
-  flex-direction: column;
-  border: none;
 }
 
-table {
-  border: none;
-  width: 100%;
+.foods-column2 {
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
 }
 
-tr {
-  width: 100%;
-  margin-bottom: 10px;
-  border: none;
+.foods-column3 {
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
 }
 
-p {
-  margin-left: 3%;
+.foods-column4 {
+  padding: 10px;
+  margin-left: 25px;
+  text-align: center;
+  vertical-align: top;
 }
 
 .menu-container {
@@ -106,10 +123,11 @@ p {
   text-decoration: none;
 }
 
-.new-recipe-btn {
-  margin-left: 8%;
-  margin-top: 15px;
-  font-size: 1.2rem;
+.new-food-btn {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  float: right;
+  font-size: 1.3rem;
   color: black;
   background-color: lightgrey;
   border: solid 2px black;
@@ -119,14 +137,13 @@ p {
   padding: 5px 10px;
 }
 
-.new-recipe-btn:hover {
+.new-food-btn:hover {
   background-color: grey;
   box-shadow: 1px 1px black;
   font-weight: 600;
 }
 
 .link1 {
-  margin-left: 0;
   background-color: transparent;
   border: none;
   color: mediumblue;
@@ -139,9 +156,18 @@ p {
   font-weight: 600;
 }
 
-.description,
 .name {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  padding-left: 3px;
+  text-align: left;
+}
+
+.measurement,
+.quantity,
+.unit-price {
+  font-size: 1.3rem;
+  padding-left: 3px;
+  text-align: center;
 }
 
 .logout-btn {
