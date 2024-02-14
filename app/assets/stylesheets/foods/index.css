@@ -26,6 +26,15 @@ li {
   padding: 0;
 }
 
+th {
+  background-color: lightgrey;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
 .foods-container {
   margin-left: 8%;
   margin-right: 8%;
@@ -35,19 +44,10 @@ li {
 
 .foods-table {
   margin-top: 5%;
-  border: 1px solid black;
-  border-collapse: collapse;
 }
 
-th {
-  background-color: lightgrey;
+.foods-table td {
   border: 1px solid black;
-  border-collapse: collapse;
-}
-
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
 }
 
 .foods-column1 {
@@ -119,7 +119,6 @@ td {
 .menu-btn:hover {
   background-color: grey;
   box-shadow: 1px 1px black;
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -140,7 +139,6 @@ td {
 .new-food-btn:hover {
   background-color: grey;
   box-shadow: 1px 1px black;
-  font-weight: 600;
 }
 
 .link1 {
@@ -152,7 +150,7 @@ td {
 }
 
 .link1:hover {
-  color: navy;
+  color: darkblue;
   font-weight: 600;
 }
 
@@ -193,4 +191,12 @@ td {
   margin-left: 8%;
   margin-top: 20px;
   font-size: 1.2rem;
+}
+
+.odd {
+  background-color: white;
+}
+
+.even {
+  background-color: lightgray;
 }

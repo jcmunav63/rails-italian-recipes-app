@@ -45,6 +45,7 @@ td {
 .up-table {
   width: 100%;
   border: none;
+  margin-bottom: 10px;
 }
 
 .f-size {
@@ -68,7 +69,6 @@ td {
 }
 
 .span {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 3px;
@@ -149,7 +149,6 @@ td {
 .middle-btn:hover {
   background-color: grey;
   box-shadow: 1px 1px black;
-  font-weight: 600;
 }
 
 .link1 {
@@ -158,9 +157,15 @@ td {
   text-decoration: none;
 }
 
+.link1:hover {
+  color: darkblue;
+  font-weight: 600;
+}
+
 .link2 {
   font-size: 1.3rem;
   margin-left: 30px;
+  padding-top: 5px;
   border: none;
   color: mediumblue;
   background-color: transparent;
@@ -169,4 +174,21 @@ td {
 .link2:hover {
   color: darkblue;
   font-weight: 600;
+}
+
+.link3 {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  text-decoration: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.odd {
+  background-color: white;
+}
+
+.even {
+  background-color: lightgray;
 }

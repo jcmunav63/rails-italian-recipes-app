@@ -15,9 +15,11 @@
         </div>
       </td>
     </tr>
+  </table>
+  <table>
     <tr>
-      <td colspan="2" class="span">
-        <%= link_to 'Generate shopping list', class: "middle-btn" %>&nbsp;&nbsp;
+      <td class="span">
+        <%= link_to 'Generate shopping list', generate_shopping_list_user_recipe_path(@user, @recipe), class: "middle-btn" %>&nbsp;&nbsp;
         <%= link_to 'Add ingredient', new_user_recipe_recipe_food_path(current_user, @recipe), class: "middle-btn" %>
       </td>
     </tr>
@@ -31,7 +33,7 @@
     <th style="width: 20%">Value</th>
     <th style="width: 30%">Actions</th>
     <% @recipefoods.each do |recipefood| %>
-      <tr>
+      <tr class="<%= cycle("odd", "even") %>">
         <td class="col1">
           <p class="name"><%= recipefood.food.name %></p>
         </td>
@@ -43,7 +45,7 @@
         </td>
         <td class="col4">
           <p>
-            <%= link_to "Modify",  class: "link1" %>&nbsp;&nbsp;
+            <%= link_to "Modify", user_recipe_path(@user, @recipe), class: "link3" %>&nbsp;&nbsp;
           <%= button_to "Delete", user_recipe_recipe_food_path(user_id: @user.id, recipe_id: @recipe.id,
             id: recipefood.id), method: :delete, class: "link2", data: { confirm: 'Are you sure?' } %>
           </p>

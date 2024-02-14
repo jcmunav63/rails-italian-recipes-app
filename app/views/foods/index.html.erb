@@ -5,14 +5,14 @@
   <%#   %>
 
   <table class="foods-table">
-    <th style="width: 30%">Food</th>
+    <th style="width: 25%">Food</th>
     <th style="width: 20%">Quantity</th>
-    <th style="width: 15%">Measurment Unit</th>
+    <th style="width: 20%">Measurment Unit</th>
     <th style="width: 15%">Unit price</th>
     <th style="width: 20%">Actions</th>
     <% @foods.each do |food| %>
       <div>
-        <tr>
+        <tr class="<%= cycle("odd", "even") %>">
           <td class="food-column1">
             <p class="name"><%= food.name %></p>
           </td>
@@ -23,7 +23,7 @@
             <p class="measurement"><%= food.measurement_unit %></p>
           </td>
           <td class="food-column3">
-            <p class="unit-price"><%= food.price %></p>
+            <p class="unit-price">$<%= food.price %></p>
           </td>
           <td class="food-column4">
             <span style="text-align: center;"><%= button_to "Delete", user_food_path(@user.id, food.id), class: "link1", method: :delete,
