@@ -17,7 +17,7 @@
     </tr>
     <tr>
       <td colspan="2" class="span">
-        <%= link_to 'Generate shopping list', class: "middle-btn" %>&nbsp;&nbsp;
+        <%= link_to 'Generate shopping list', generate_shopping_list_user_recipe_path(@user, @recipe), class: "middle-btn" %>&nbsp;&nbsp;
         <%= link_to 'Add ingredient', new_user_recipe_recipe_food_path(current_user, @recipe), class: "middle-btn" %>
       </td>
     </tr>
