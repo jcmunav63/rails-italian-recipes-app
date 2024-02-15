@@ -27,7 +27,7 @@ RSpec.describe Recipe, type: :model do
     it 'has many recipe_foods with dependent destroy' do
       recipe = Recipe.create(name: 'Chicken Curry', description: 'Delicious curry recipe', user: @user1)
       food = Food.create(name: 'Chicken', measurement_unit: 'kg', user: @user1)
-      recipe_food = RecipeFood.create(recipe: recipe, food: food)
+      recipe_food = RecipeFood.create(recipe:, food:)
 
       expect(recipe.recipe_foods).to include(recipe_food)
       expect { recipe.destroy }.to change { RecipeFood.count }.by(-1)
@@ -39,9 +39,9 @@ RSpec.describe Recipe, type: :model do
       food1 = Food.create(user: @user1, name: 'Food 1', measurement_unit: 'kg', price: 10)
       food2 = Food.create(user: @user1, name: 'Food 2', measurement_unit: 'kg', price: 5)
       recipe = Recipe.create(user: @user1, name: 'A Delicious Recipe', preparation_time: '25', cooking_time: '30',
-        description: 'A delicious recipe description.', public: false)
-      RecipeFood.create(recipe: recipe, food: food1, quantity: 2)
-      RecipeFood.create(recipe: recipe, food: food2, quantity: 3)
+                             description: 'A delicious recipe description.', public: false)
+      RecipeFood.create(recipe:, food: food1, quantity: 2)
+      RecipeFood.create(recipe:, food: food2, quantity: 3)
 
       expect(recipe.total_price).to eq(35)
     end
