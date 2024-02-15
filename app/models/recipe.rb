@@ -6,6 +6,7 @@ class Recipe < ApplicationRecord
   validates :user_id, presence: true
 
   has_many :recipe_foods, dependent: :destroy
+
   def total_price
     recipe_foods.sum { |recipe_food| recipe_food.food.price * recipe_food.quantity }
   end
