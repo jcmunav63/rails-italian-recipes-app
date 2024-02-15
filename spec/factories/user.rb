@@ -4,4 +4,8 @@ FactoryBot.define do
     sequence(:email) { |n| "testuser#{n}@gmail.com" }
     password { 'me1234' }
   end
+
+  trait :confirmed do
+    confirmed_at { Time.now }
+  end
 end
