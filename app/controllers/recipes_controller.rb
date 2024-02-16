@@ -3,8 +3,7 @@ class RecipesController < ApplicationController
 
   def index
     @user = current_user
-    # preload all users
-    @recipes = @user.recipes.includes(:user).all.paginate(page: params[:page], per_page: 3)
+    @recipes = @user.recipes.includes(:user).all.paginate(page: params[:page], per_page: 3) # preload all users
   end
 
   def new
@@ -34,7 +33,8 @@ class RecipesController < ApplicationController
   end
 
   def public_recipes
-    @public_recipes = Recipe.includes(:user).where(public: true).order(created_at: :desc).paginate(page: params[:page], per_page: 5)
+    @public_recipes = Recipe.includes(:user).where(public: true).order(created_at: :desc)
+    .paginate(page: params[:page], per_page: 5)
   end
 
   def show
