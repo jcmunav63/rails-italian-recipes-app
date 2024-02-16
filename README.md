@@ -134,12 +134,6 @@ npx stylelint "**/*.{css,scss}"
 
 * Implement unit tests using RSpec (pending).
 
-### Deployment
-
-You can deploy this project using:
-
-Not available at the moment.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
