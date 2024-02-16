@@ -13,6 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ 
+ * {
+  font-family: 'Outfit', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.app-body {
+  background-image: url("/app/assets/images/pattern_doodle2.png");
+  background-size: cover;
+}
 
 .notice-container {
   margin-left: 8%;
