@@ -47,6 +47,7 @@ class RecipesController < ApplicationController
     @missing_food_items = find_missing_food_items(@recipe)
     @total_food_to_buy = @missing_food_items.count
     @total_value_of_food_needed = @missing_food_items.sum { |item| item[:quantity] * item[:price] }
+    @missing_food_items = Food.where(id: @missing_food_items.map(&:id)).includes(:user) # Preload users
   end
 
   private
