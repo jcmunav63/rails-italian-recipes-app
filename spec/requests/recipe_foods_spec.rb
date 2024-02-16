@@ -1,4 +1,5 @@
 require 'rails_helper'
+
 RSpec.describe 'RecipeFoods', type: :request do
   include Rails.application.routes.url_helpers
   describe 'GET #new' do
@@ -10,6 +11,7 @@ RSpec.describe 'RecipeFoods', type: :request do
       expect(response).to have_http_status(:success)
     end
   end
+
   describe 'POST #create' do
     context 'with valid parameters' do
       it 'creates a new recipe_food' do
@@ -24,6 +26,7 @@ RSpec.describe 'RecipeFoods', type: :request do
       end
     end
   end
+
   describe 'DELETE #destroy' do
     it 'destroys the requested recipe_food' do
       user = FactoryBot.create(:user, :confirmed)

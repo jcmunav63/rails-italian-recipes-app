@@ -1,11 +1,13 @@
 require 'rails_helper'
 RSpec.describe 'RecipeFoods', type: :system do
-  let(:user) { create(:user) }
-  let(:recipe) { create(:recipe, user:) }
-  let!(:recipe_foods) { create_list(:recipe_food, 3, recipe:) }
+  let(:user) { FactoryBot.create(:user, confirmed_at: Time.zone.now) }
+  let(:recipe) { FactoryBot.create(:recipe, user:) }
+  let!(:recipe_foods) { FactoryBot.create_list(:recipe_food, 3, recipe:) }
+
   before do
     sign_in user
   end
+
   describe 'Shopping List' do
     it 'shows the correct total food to buy and total value' do
       visit generate_shopping_list_user_recipe_path(user, recipe)
@@ -13,6 +15,7 @@ RSpec.describe 'RecipeFoods', type: :system do
       expect(page).to have_content('Total value of food needed:')
     end
   end
+
   describe 'Recipes Index Page' do
     let!(:recipes) { create_list(:recipe, 2, user:) }
     it 'lists all recipes and has a link to add new recipe' do
@@ -24,6 +27,7 @@ RSpec.describe 'RecipeFoods', type: :system do
       end
     end
   end
+
   describe 'New Recipe' do
     it 'renders the new recipe form' do
       visit new_user_recipe_path(user)
@@ -34,6 +38,7 @@ RSpec.describe 'RecipeFoods', type: :system do
       expect(page).to have_field('Description')
     end
   end
+
   describe 'Public Recipes' do
     let!(:public_recipes) { create_list(:recipe, 2, user:, public: true) }
     it 'shows public recipes' do
@@ -43,6 +48,7 @@ RSpec.describe 'RecipeFoods', type: :system do
       end
     end
   end
+
   describe 'Recipe Details' do
     it 'shows recipe details including ingredients' do
       visit user_recipe_path(user, recipe)

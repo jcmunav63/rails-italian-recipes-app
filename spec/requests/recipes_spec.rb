@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'Recipes', type: :request do
   include Rails.application.routes.url_helpers
-
   describe 'GET /recipes' do
     it 'returns a success response' do
       user = FactoryBot.create(:user, :confirmed)

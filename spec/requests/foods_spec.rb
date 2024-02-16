@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Foods', type: :request do
+  include Rails.application.routes.url_helpers
   describe 'GET #index' do
     it 'returns a success response' do
       user = FactoryBot.create(:user, :confirmed)
