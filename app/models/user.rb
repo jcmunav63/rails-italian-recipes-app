@@ -10,8 +10,7 @@ class User < ApplicationRecord
   has_many :foods, dependent: :destroy
 
   # User::Roles
-  enum role: %i[default admin],freeze
-  # ROLES = %i[admin, default].freeze
+  enum role: %i[default admin].freeze
 
   def admin?
     role == 'admin'

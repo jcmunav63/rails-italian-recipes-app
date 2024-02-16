@@ -21,7 +21,7 @@
 }
 
 .app-body {
-  background-image: url(public/pattern_doodle2.png);
+  background-image: url(pattern_doodle2.png);
   background-size: cover;
 }
 
@@ -29,7 +29,7 @@
   margin-left: 8%;
   margin-right: 8%;
   width: auto;
-  max-height: 100px;
+  max-height: 50px;
 }
 
 .flash-messages {
@@ -57,4 +57,30 @@
   color: #3c763d;
   background-color: #dff0d8;
   border-color: #d6e9c6;
+}
+
+.menu-btn {
+  background-color: lightgrey;
+  font-size: 1.2rem;
+  border: 2px solid darkslategray;
+  border-radius: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  box-shadow: 3px 3px black;
+  text-decoration: none;
+}
+
+.menu-btn:hover {
+  background-color: grey;
+  box-shadow: 1px 1px black;
+  text-decoration: none;
+}
+
+.menu-btn:active {
+  color: blue;
+  background-color: darkgray;
+  box-shadow: 1px 1px black;
+  text-decoration: none;
 }

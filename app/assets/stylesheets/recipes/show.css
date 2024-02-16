@@ -192,3 +192,9 @@ td {
 .even {
   background-color: lightgray;
 }
+
+.check {
+  font-size: 1.3rem;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}

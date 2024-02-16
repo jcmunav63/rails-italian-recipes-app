@@ -5,13 +5,13 @@
     <tr>
       <td style="width: 70%">
         <p class="f-size">Preparation time: <%= @recipe.preparation_time %> minutes</p><br />
-        <p class="f-size">Cooking time: <%= @recipe.cooking_time %>minutes</p>
+        <p class="f-size">Cooking time: <%= @recipe.cooking_time %> minutes</p>
         <p class="f-size">Description: <%= @recipe.description %></p>
       </td>
       <td style="width: 30%">
         <div class="form-group">
           <%= label_tag :public, "Public", class: "public" %>
-          <%= check_box_tag :public, 1, @recipe.public, class: "slider round" %>
+          <%= check_box_tag :public, 1, @recipe.public, class: "check slider round" %>
         </div>
       </td>
     </tr>
