@@ -21,7 +21,7 @@
 }
 
 .app-body {
-  background-image: url("/app/assets/images/pattern_doodle2.png");
+  background-image: url(public/pattern_doodle2.png);
   background-size: cover;
 }
 
