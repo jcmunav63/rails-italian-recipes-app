@@ -144,3 +144,615 @@ li {
   box-shadow: 1px 1px black;
   font-weight: 600;
 }
+
+/* RECIPES INDEX */
+
+h1 {
+  padding: 0;
+  margin-top: 2rem;
+  margin-left: 8%;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-left: 3%;
+}
+
+.recipes-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.recipe-column1 {
+  padding: 10px;
+  vertical-align: top;
+  border: none;
+}
+
+.recipe-column2 {
+  padding: 10px;
+  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+table {
+  border: none;
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+}
+
+p {
+  margin-left: 3%;
+}
+
+.new-recipe-btn {
+  margin-left: 8%;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: black;
+  background-color: lightgrey;
+  border: solid 2px black;
+  border-radius: 4px;
+  box-shadow: 3px 3px black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.new-recipe-btn:hover {
+  background-color: grey;
+  box-shadow: 1px 1px black;
+}
+
+.link1 {
+  margin-left: 0;
+  background-color: transparent;
+  border: none;
+  color: mediumblue;
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+
+.link1:hover {
+  color: darkblue;
+  font-weight: 600;
+}
+
+.description,
+.name {
+  font-size: 1.2rem;
+}
+
+.page {
+  margin-left: 8%;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* RECIPES SHOW */
+
+.section1-details {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+}
+
+.recipe-foods-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+}
+
+th {
+  font-size: 1.3rem;
+}
+
+.tr {
+  width: 100%;
+}
+
+td {
+  vertical-align: top;
+  padding: 0;
+}
+
+.up-table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.f-size {
+  font-size: 1.4rem;
+}
+
+.form-group {
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 15px;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.span {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 12px;
+}
+
+.public {
+  padding-top: 15px;
+}
+
+.up-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.sep {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.down-table {
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+
+.down-table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0;
+}
+
+.col1,
+.col2,
+.col3 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.col4 {
+  vertical-align: middle;
+  padding-left: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.name,
+.quantity,
+.unit-value {
+  font-size: 1.3rem;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.middle-btn {
+  margin-left: 8%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  background-color: lightgrey;
+  border: solid 2px black;
+  border-radius: 4px;
+  box-shadow: 3px 3px black;
+  text-decoration: none;
+  padding: 4px 6px;
+}
+
+.middle-btn:hover {
+  background-color: grey;
+  box-shadow: 1px 1px black;
+}
+
+.link2 {
+  font-size: 1.3rem;
+  margin-left: 30px;
+  padding-top: 5px;
+  border: none;
+  color: mediumblue;
+  background-color: transparent;
+}
+
+.link2:hover {
+  color: darkblue;
+  font-weight: 600;
+}
+
+.link3 {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  text-decoration: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.odd {
+  background-color: white;
+}
+
+.even {
+  background-color: lightgray;
+}
+
+.check {
+  font-size: 1.3rem;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+/* NEW RECIPE */
+
+.new-recipe-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.label {
+  font-size: 1.4rem;
+  width: 20%;
+}
+
+.name-field {
+  font-size: 1.4rem;
+  width: 80%;
+}
+
+.text-field {
+  font-size: 1.4rem;
+  height: 25px;
+  width: 60%;
+}
+
+.number-field {
+  font-size: 1.4rem;
+  width: 80%;
+}
+
+.public-field {
+  font-size: 1.4rem;
+}
+
+.submit-btn {
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: black;
+  background-color: lightgrey;
+  border: solid 2px black;
+  border-radius: 4px;
+  box-shadow: 3px 3px black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.submit-btn:hover {
+  background-color: grey;
+  box-shadow: 1px 1px black;
+  font-weight: 600;
+}
+
+.submit-btn:active {
+  background-color: darkslategrey;
+}
+
+/* SHOPPING LIST */
+
+.shopping-list-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+}
+
+.section1,
+.section2 {
+  margin-left: 2%;
+  width: 96%;
+}
+
+.th {
+  background-color: lightgrey;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.trr {
+  width: 100%;
+}
+
+.table1 {
+  margin-bottom: 30px;
+}
+
+.table1 td {
+  padding: 3px;
+  font-size: 1.3rem;
+  text-align: center;
+  border: none;
+}
+
+.table2 {
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  border: solid 1px black;
+}
+
+.table2 td {
+  padding: 3px;
+  font-size: 1.3rem;
+  border: solid 1px black;
+}
+
+.col1 {
+  margin-left: 3px;
+  text-align: start;
+  vertical-align: middle;
+}
+
+.col2,
+.col3 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* FOODS INDEX */
+
+.foods-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.foods-table {
+  margin-top: 5%;
+}
+
+.foods-table td {
+  border: 1px solid black;
+}
+
+.foods-column1 {
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.foods-column1a {
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.foods-column2 {
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.foods-column3 {
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.foods-column4 {
+  padding: 10px;
+  margin-left: 25px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.new-food-btn {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  float: right;
+  font-size: 1.3rem;
+  color: black;
+  background-color: lightgrey;
+  border: solid 2px black;
+  border-radius: 4px;
+  box-shadow: 3px 3px black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.new-food-btn:hover {
+  background-color: grey;
+  box-shadow: 1px 1px black;
+}
+
+.link11 {
+  background-color: transparent;
+  border: none;
+  color: mediumblue;
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+
+.link11:hover {
+  color: darkblue;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 1.3rem;
+  padding-left: 3px;
+  text-align: left;
+}
+
+.measurement,
+.quantity,
+.unit-price {
+  font-size: 1.3rem;
+  padding-left: 3px;
+  text-align: center;
+}
+
+/* NEW FOOD */
+
+.new-food-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+}
+
+.label2 {
+  font-size: 1.4rem;
+  padding: 3px;
+}
+
+.name2-field {
+  font-size: 1.4rem;
+  padding: 3px;
+  width: 300px;
+}
+
+.text2-field {
+  font-size: 1.4rem;
+  height: 25px;
+  width: 300px;
+  padding: 3px;
+}
+
+.number2-field {
+  font-size: 1.4rem;
+  padding: 3px;
+  width: 300px;
+}
+
+.submit2-btn {
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: black;
+  background-color: lightgrey;
+  border: solid 2px black;
+  border-radius: 4px;
+  box-shadow: 3px 3px black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.submit2-btn:hover {
+  background-color: grey;
+  box-shadow: 1px 1px black;
+  font-weight: 600;
+}
+
+.submit2-btn:active {
+  background-color: darkslategrey;
+}
+
+/* NEW RECIPE_FOOD */
+
+.new-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+}
+
+.label3 {
+  font-size: 1.4rem;
+  padding: 3px;
+}
+
+.name3-field {
+  font-size: 1.4rem;
+  padding: 3px;
+}
+
+.text3-field {
+  font-size: 1.4rem;
+  height: 25px;
+  width: 60%;
+  padding: 3px;
+}
+
+.number3-field {
+  font-size: 1.4rem;
+  padding: 3px;
+}
+
+.submit3-btn {
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: black;
+  background-color: lightgrey;
+  border: solid 2px black;
+  border-radius: 4px;
+  box-shadow: 3px 3px black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.submit3-btn:hover {
+  background-color: grey;
+  box-shadow: 1px 1px black;
+  font-weight: 600;
+}
+
+.submit3-btn:active {
+  background-color: darkslategrey;
+}
+
+/* ABOUT PAGE */
+
+.about.container {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: auto;
+}
+
+.heading-about {
+  text-align: center;
+}
+
+.rem13 {
+  font-size: 1.3rem;
+}
