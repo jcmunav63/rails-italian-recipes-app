@@ -19,6 +19,7 @@
     - [Install](#install)
     - [Usage](#usage)
     - [Run tests](#run-tests)
+    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -132,7 +133,15 @@ Run the following command for CSS code...
 npx stylelint "**/*.{css,scss}"
 ```
 
-* Implement unit tests using RSpec (pending).
+* Implement unit tests using RSpec.
+* Implement integration tests with RSpec & Capybara.
+
+### Deployment	
+
+This project has been deployed on Render (free version). You'll have to wait a few minutes if the server is inactive at some point.
+
+URL: https://rails-italian-recipes-app.onrender.com/	
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
