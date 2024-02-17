@@ -1,0 +1,25 @@
+<div id="container"></div>
+<div class="menu-container">
+  <span class="logout">
+    <% if user_signed_in? %>
+      <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: "logout-btn" %>
+    <% end %>
+  </span>
+  <ul class="menu">
+    <li><%= link_to "Recipes", root_path, class: "menu-btn" %></li>
+    <li><%= link_to "Public Recipes", public_recipes_path, class: "menu-btn" %></li>
+    <li><%= link_to "Foods", user_foods_path(current_user), class: "menu-btn" %></li>
+    <% if @recipe.present? %>
+      <li><%= link_to "Shopping List", generate_shopping_list_user_recipe_path(current_user, @recipe), class: "menu-btn" %></li>
+    <% else %>
+      <% if current_user.recipes.any? %>
+        <% # Redirect to the first recipe %>
+        <li><%= link_to "Shopping List", generate_shopping_list_user_recipe_path(current_user, current_user.recipes.first), class: "menu-btn" %></li>
+      <% else %>
+        <% # Redirect to the Recipes Index page%>
+        <li><%= link_to "Shopping List", root_path, class: "menu-btn" %></li>
+      <% end %>
+    <% end %>
+    <%= link_to "About", about_show_path, class: "menu-btn-about" %>
+  </ul>
+</div>

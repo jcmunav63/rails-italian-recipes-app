@@ -1,9 +1,48 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+# SEEDS.RB file (upload initial data)
+
+# Create users
+user1 = User.create(name: 'Jean Reno', email: "jeanreno@gmail.com", password: "me1234", password_confirmation: "me1234", role: 'admin')
+user2 = User.create(name: 'John Lennon', email: "johnlennon@gmail.com", password: "me1234", password_confirmation: "me1234", role: 'default')
+user3 = User.create(name: 'Hellen Hunt', email: "hellenhunt@gmail.com", password: "me1234", password_confirmation: "me1234", role: 'default')
+
+# Create recipes
+recipe1 = Recipe.create(name: 'Fettuccine Alfredo', preparation_time: '30.0', cooking_time: '30.0', description: 'Classic italian pasta dish that is rich, creamy, and delicious. Tender fettuccine noodles are tossed in a homemade Alfredo sauce made creamy with heavy cream, butter, and Parmesan cheese, and seasoned with garlic, salt, and pepper.', public: false, user_id: user1.id)
+recipe2 = Recipe.create(name: 'Easy chicken Parmesan (Parmigiana)', preparation_time: '15.0', cooking_time: '20.0', description: 'Soft and tender chicken with a crispy, breaded coating covered in a rich tomato sauce, and topped with a golden melted mozzarella and parmesan cheese.', public: false, user_id: user1.id)
+recipe3 = Recipe.create(name: 'Easy meat Lasagna', preparation_time: '20.0', cooking_time: '20.0', description: 'Layers of tender lasagna, meaty tomato sauce, a creamy cheese filling, with extra melted cheese on top, and a perfect, crispy crackly crust.', public: true, user_id: user1.id)
+recipe4 = Recipe.create(name: 'Minestrone soup', preparation_time: '29.0', cooking_time: '25.0', description: 'This classic Italian soup is packed with vegetables like carrots, celery, zucchini, and green beans, and is simmered in a rich tomato broth with white kidney beans and pasta. It\'s quick and easy to make in one pot and freezer-friendly!', public: false, user_id: user1.id)
+recipe5 = Recipe.create(name: 'Italian Pasta Salad', preparation_time: '25.0', cooking_time: '20.0', description: 'Made with pasta, vibrant vegetables, salami, mozzarella balls, olives, and fresh herbs, this pasta salad is nutritious, flavorful, and provides the energy you need to get through the day.', public: true, user_id: user1.id)
+recipe6 = Recipe.create(name: 'Pasta bake with sausage', preparation_time: '35.0', cooking_time: '20.0', description: 'A description of recipe: Pasta bake with sausage.', public: false, user_id: user2.id)
+recipe7 = Recipe.create(name: 'Italian meatballs', preparation_time: '25.0', cooking_time: '25.0', description: 'A description of recipe: Italian meatballs.', public: false, user_id: user2.id)
+recipe8 = Recipe.create(name: 'Creamy tortellini soup with sausage', preparation_time: '15.0', cooking_time: '35.0', description: 'A description of recipe: Creamy tortellini soup with sausage.', public: true, user_id: user2.id)
+recipe9 = Recipe.create(name: 'Creamy lemon chicken piccata', preparation_time: '15.0', cooking_time: '35.0', description: 'A description of recipe: Creamy lemon chicken piccata.', public: true, user_id: user3.id)
+recipe10 = Recipe.create(name: 'Italian pasta salad', preparation_time: '30.0', cooking_time: '15.0', description: 'A description of recipe: Italian pasta salad.', public: false, user_id: user3.id)
+recipe11 = Recipe.create(name: 'Creamy Tomato Pasta', preparation_time: '45.0', cooking_time: '25.0', description: 'A description of recipe: Creamy Tomato Pasta.', public: false, user_id: user3.id)
+recipe12 = Recipe.create(name: 'Homemade calzoni', preparation_time: '35.0', cooking_time: '30.0', description: 'A description of recipe: Homemade calzoni.', public: true, user_id: user3.id)
+recipe13 = Recipe.create(name: 'Creamy Tuscan shrimp', preparation_time: '25.0', cooking_time: '30.0', description: 'A description of recipe: Creamy Tuscan shrimp.', public: false, user_id: user3.id)
+recipe14 = Recipe.create(name: 'Chicken marsala', preparation_time: '25.0', cooking_time: '25.0', description: 'A description of recipe: Chicken marsala.', public: true, user_id: user3.id)
+
+# Create foods
+food1 = Food.create(name: 'Chicken breasts', measurement_unit: 'piece', price: '4.12', quantity: '1.0', user_id: user1.id)
+food2 = Food.create(name: 'Salt', measurement_unit: 'kg', price: '0.95', quantity: '1.0', user_id: user1.id)
+food3 = Food.create(name: 'Ground bread', measurement_unit: 'kg', price: '2.9', quantity: '1.0', user_id: user1.id)
+food4 = Food.create(name: 'Eggs', measurement_unit: '30-pack', price: '5.0', quantity: '1.0', user_id: user1.id)
+food5 = Food.create(name: 'Parmesan cheese', measurement_unit: 'kg', price: '24.5', quantity: '1.0', user_id: user1.id)
+food6 = Food.create(name: 'Mozzarella Cheese', measurement_unit: 'kg', price: '19.55', quantity: '1.0', user_id: user1.id)
+food7 = Food.create(name: 'Olive oil', measurement_unit: '750 ml bottle', price: '10.8', quantity: '1.0', user_id: user1.id)
+food8 = Food.create(name: 'Tomato sauce', measurement_unit: '680g bottle', price: '4.0', quantity: '1.0', user_id: user1.id)
+food9 = Food.create(name: 'Penne rigate pasta', measurement_unit: '500g bag', price: '1.63', quantity: '1.0', user_id: user2.id)
+food10 = Food.create(name: 'Italian sausage', measurement_unit: '400g pack', price: '4.92', quantity: '1.0', user_id: user2.id)
+
+# Create recipe-foods (to-do)
+RecipeFood.create(quantity: '1.0', recipe_id: recipe1.id, food_id: food1.id)
+RecipeFood.create(quantity: '2.0', recipe_id: recipe1.id, food_id: food2.id)
+RecipeFood.create(quantity: '1.0', recipe_id: recipe1.id, food_id: food3.id)
+RecipeFood.create(quantity: '1.0', recipe_id: recipe2.id, food_id: food2.id)
+RecipeFood.create(quantity: '2.0', recipe_id: recipe2.id, food_id: food3.id)
+RecipeFood.create(quantity: '1.0', recipe_id: recipe2.id, food_id: food4.id)
+RecipeFood.create(quantity: '1.0', recipe_id: recipe3.id, food_id: food3.id)
+RecipeFood.create(quantity: '2.0', recipe_id: recipe3.id, food_id: food4.id)
+RecipeFood.create(quantity: '1.0', recipe_id: recipe3.id, food_id: food5.id)
+RecipeFood.create(quantity: '2.0', recipe_id: recipe4.id, food_id: food4.id)
+RecipeFood.create(quantity: '2.0', recipe_id: recipe4.id, food_id: food5.id)
+RecipeFood.create(quantity: '2.0', recipe_id: recipe4.id, food_id: food6.id)

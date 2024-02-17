@@ -13,14 +13,12 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Presentation ](#-presentation-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
     - [Run tests](#run-tests)
-    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -51,12 +49,6 @@ The Ruby on Rails (RoR) Italian Recipes App is a complete Recipe web project inc
 - **Include controllers, and views for displaying: a list of recipes page (all), a list of public recipes page, a recipe details page, a list of ingredients (food) page, and a shopping list page (missing ingredients). Follow the wireframe designs.**
 - **Implementing user authentication by means of the Devise gem.**
 - **Implementing authorization rules by means of the CanCanCan gem.**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Presentation <a name="presentation"></a>
-
-Not available at the moment.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,12 +134,6 @@ npx stylelint "**/*.{css,scss}"
 
 * Implement unit tests using RSpec (pending).
 
-### Deployment
-
-You can deploy this project using:
-
-Not available at the moment.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -161,8 +147,8 @@ Not available at the moment.
 
 👤 **Mohammed Jamal**
 
-- GitHub: [@githubhandle](https://github.com/mohamedgamaleldin999999)
-- Twitter: [@twitterhandle](https://twitter.com/Mohamme43086002)
+- GitHub: [@mohamedgamaleldin999999](https://github.com/mohamedgamaleldin999999)
+- Twitter: [@mohammedjamal](https://twitter.com/Mohamme43086002)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

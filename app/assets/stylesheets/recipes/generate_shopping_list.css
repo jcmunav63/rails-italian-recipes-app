@@ -1,0 +1,82 @@
+* {
+  font-family: 'Outfit', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0;
+  margin-top: 2rem;
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  padding: 5px;
+}
+
+.shopping-list-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: auto;
+}
+
+.section1,
+.section2 {
+  margin-left: 2%;
+  width: 96%;
+}
+
+th {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+tr {
+  width: 100%;
+}
+
+.table1 {
+  margin-bottom: 30px;
+}
+
+.table1 td {
+  padding: 3px;
+  font-size: 1.3rem;
+  text-align: center;
+  border: none;
+}
+
+.table2 {
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  border: solid 1px black;
+}
+
+.table2 td {
+  padding: 3px;
+  font-size: 1.3rem;
+  border: solid 1px black;
+}
+
+.col1 {
+  margin-left: 3px;
+  text-align: start;
+  vertical-align: middle;
+}
+
+.col2,
+.col3 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.odd {
+  background-color: white;
+}
+
+.even {
+  background-color: lightgray;
+}

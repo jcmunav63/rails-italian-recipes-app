@@ -1,0 +1,18 @@
+<div class="new-container">
+  <h1>New Ingredient</h1>
+  <%= form_with(model: [@recipe, RecipeFood.new], url: user_recipe_recipe_foods_path(current_user, @recipe),
+    local: true) do |form| %>
+    <table>
+      <tr>
+        <td style="width: 30%;"><%= form.label :food_id, "Food", class: "label3" %></td>
+        <td style="width: 70%;"><%= form.collection_select :food_id, current_user.foods, :id, :name,
+          { prompt: "Select Food" }, { style: "font-size: 1.3rem; padding: 3px;" } %></td>
+      </tr>
+      <tr>
+        <td><%= form.label :quantity, "Quantity", class: "label3" %></td>
+        <td><%= form.number_field :quantity, class: "number3-field" %></td>
+      </tr>
+    </table>
+    <%= form.submit "Add Ingredient", class: "submit3-btn" %>
+  <% end %>
+</div>
