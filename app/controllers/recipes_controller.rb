@@ -4,11 +4,14 @@ class RecipesController < ApplicationController
   def index
     @user = current_user
     @recipes = @user.recipes.includes(:user).all.paginate(page: params[:page], per_page: 3) # preload all users
+    @recipe = @recipes.first
+    puts @recipe.inspect
   end
 
   def new
-    @user = current_user
-    @recipe = @user.recipes.build
+    @recipe = current_user.recipes.build
+    @layout_recipe = @recipe
+    render layout: 'application'
   end
 
   def create
@@ -18,6 +21,7 @@ class RecipesController < ApplicationController
     if @recipe.save
       redirect_to root_path(@user), notice: 'Recipe was successfully created!'
     else
+      flash.now[:alert] = 'Failed to create recipe: Recipe name must be unique.'
       render :new
     end
   end

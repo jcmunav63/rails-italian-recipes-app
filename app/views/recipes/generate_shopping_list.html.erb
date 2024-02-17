@@ -3,7 +3,7 @@
   <h1>Shopping List</h1>
   <div class="section1">
     <table class="table1">
-      <tr>
+      <tr class="trr">
         <td style="width: 40%">
           Amount of food to buy: <%= @total_food_to_buy %>
         </td>
@@ -17,13 +17,13 @@
   <div class="section2">
     <% if @missing_food_items && @missing_food_items.any? %>
       <table class="table2">
-        <tr>
-          <th style="width: 34%; font-size: 1.3rem;">Food</th>
-          <th style="width: 30%; font-size: 1.3rem;">Quantity</th>
-          <th style="width: 30%; font-size: 1.3rem;">Price</th>
+        <tr class="trr">
+          <th class="th" style="width: 34%; font-size: 1.3rem;">Food</th>
+          <th class="th" style="width: 30%; font-size: 1.3rem;">Quantity</th>
+          <th class="th" style="width: 30%; font-size: 1.3rem;">Price</th>
         </tr>
         <% @missing_food_items.each do |missingfood| %>
-          <tr class="<%= cycle("odd", "even") %>">
+          <tr class="trr <%= cycle("odd", "even") %>">
             <td class="col1"><%= missingfood.name %></td>
             <td class="col2"><%= missingfood.quantity %></td>
             <td class="col3">$<%= missingfood.price %></td>

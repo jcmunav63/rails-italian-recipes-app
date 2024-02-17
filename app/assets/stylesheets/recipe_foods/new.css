@@ -28,29 +28,29 @@ td {
   width: 100%;
 }
 
-.label {
+.label3 {
   font-size: 1.4rem;
   padding: 3px;
 }
 
-.name-field {
+.name-field3 {
   font-size: 1.4rem;
   padding: 3px;
 }
 
-.text-field {
+.text-field3 {
   font-size: 1.4rem;
   height: 25px;
   width: 60%;
   padding: 3px;
 }
 
-.number-field {
+.number-field3 {
   font-size: 1.4rem;
   padding: 3px;
 }
 
-.submit-btn {
+.submit3-btn {
   margin-left: 20%;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -65,12 +65,12 @@ td {
   padding: 5px 10px;
 }
 
-.submit-btn:hover {
+.submit3-btn:hover {
   background-color: grey;
   box-shadow: 1px 1px black;
   font-weight: 600;
 }
 
-.submit-btn:active {
+.submit3-btn:active {
   background-color: darkslategrey;
 }

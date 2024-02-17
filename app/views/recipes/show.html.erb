@@ -1,8 +1,8 @@
 <%= render partial: 'shared/menu' %>
-<div class="section1">
+<div class="section1-details">
   <h1>Recipe: <%= @recipe.name %></h1>
   <table class="up-table">
-    <tr>
+    <tr class="tr">
       <td style="width: 70%">
         <p class="f-size">Preparation time: <%= @recipe.preparation_time %> minutes</p><br />
         <p class="f-size">Cooking time: <%= @recipe.cooking_time %> minutes</p>
@@ -17,7 +17,7 @@
     </tr>
   </table>
   <table>
-    <tr>
+    <tr class="tr">
       <td class="span">
         <%= link_to 'Generate shopping list', generate_shopping_list_user_recipe_path(@user, @recipe), class: "middle-btn" %>&nbsp;&nbsp;
         <% if can? :create, RecipeFood, @recipe %>

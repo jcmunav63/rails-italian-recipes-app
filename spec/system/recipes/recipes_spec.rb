@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'Recipes', type: :system do
-  let(:user) { FactoryBot.create(:user, confirmed_at: Time.zone.now) }
+  let(:admin_role) { 'admin' }
+  let(:user) { FactoryBot.create(:user, role: admin_role, confirmed_at: Time.zone.now) }
   let!(:recipes) { FactoryBot.create_list(:recipe, 3, user:, public: true) }
 
   before do
@@ -43,7 +44,7 @@ RSpec.describe 'Recipes', type: :system do
       visit user_recipe_path(user, recipe)
       expect(page).to have_content(recipe.name)
       expect(page).to have_link('Generate shopping list')
-      expect(page).to have_link('Add ingredient')
+      expect(page).to have_link('Add Ingredient')
     end
   end
 end

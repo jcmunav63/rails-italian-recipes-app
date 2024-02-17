@@ -28,8 +28,9 @@
           </td>
           <td class="food-column4">
             <% if can? :destroy, food %>
-              <span style="text-align: center;"><%= button_to "Delete", user_food_path(@user.id, food.id), class: "link1", method: :delete,
-                data: { confirm: 'Are you sure?' } %></span>
+              <span style="text-align: center;"><%= button_to "Delete", user_food_path(@user.id, food.id),
+                class: "link11", style: "text-decoration: none;",
+                method: :delete, data: { confirm: 'Are you sure?' } %></span>
             <% end %>
           </td>
         </tr>
